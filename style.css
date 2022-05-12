@@ -1,0 +1,78 @@
+
+:root{
+    --primarno-bg: #fff;
+    --primarno-txt: #000;
+    --sek-bg: #eee;
+    --sek-txt: #333;
+
+}
+body {
+    background: var(--primarno-bg);
+}
+
+body.active{
+    --primarno-bg: #404040;
+    --primarno-txt: #eee;
+    --sek-bg: #1b1b1b;
+    --sek-txt: #fff;
+
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 5px 10px #1b1b1b;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+}
+
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 30px;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px solid #404040;
+    border-left: 1px solid #404040;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-radius: 10px;
+}
+
+.button {
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#jednako {
+    background-color: #ff0000;
+    color: #404040  
+}
+
+.button:hover {
+    color: red;
+    transition: 0.5s ease-in-out;
+}
+
+#tema {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    padding: 20px 20px;
+    font-size: 35px;
+    background: var(--primarno-bg);
+    color: var(--primarno-tx);
+    cursor: pointer;
+    box-shadow: 0px 5px 10px #1b1b1b;
+    border-radius: 10px;
+}
